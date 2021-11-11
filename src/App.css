@@ -11,12 +11,37 @@
   --light-gray-1: #A4AAB6;
   --light-gray-2: #BCC2CB;
   --light-gray-3: #EBEEF4;
+  --light-gray-4: #f2f4f7;
   --light-green-1: #178E51;
   --black: #050A1D;
+  --white: #fff;
 }
 
 * {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0; 
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  background-color: #eee;
+}
+
+.container {
+  margin-left: 300px;
+  transition: margin-left .2s ease-in;
+  padding: 30px;
+}
+
+.container.inactive {
+  margin-left: 80px;
 }
