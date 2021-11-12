@@ -1,0 +1,11 @@
+.content {
+    background-color: var(--white);
+
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+
+    width: 90%;
+    height: 80vh;
+}
+
