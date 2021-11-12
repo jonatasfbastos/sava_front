@@ -1,33 +1,23 @@
-body{
-    background-color: #D0D0D0;
-  }
-
-/* .test{
-   background: red;
-   width: 100px;
-   height: 100px;
-  
-
- }  */
-  
-.body{
+.card-body{
     background-color: #ffffff;
     border-radius: 5px;
     width: 310px;
     height: 360px;
-    margin-right: 2%;
     margin-bottom: 10px;
-    float: left;
-  }
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
 
-  .top{
+.top{
     width: 100%;
-    height: 100px;
-    background-color: #4A84E6;
+    height: 105px;
+    background-color: var(--light-blue-2);
     border-radius: 5px;
+}
 
-
-  }
+.top.open{
+    background-color: var(--light-blue-1);
+}
   
   .top h2{
     font-size: 22px;
@@ -59,15 +49,13 @@ body{
     margin-top: 185px;
   }
   
-  .footer h2.fechado{
+  .footer h2.status{
     margin-top: 25px;
-    margin-left: 28px;
+    margin-left: 32px;
     position: absolute;
     color: #7587B0;
     font-size: 15px;
-    font-weight: 500;
-
-      
+    font-weight: 500;      
   }
 
   .footer h2.ano{
@@ -78,16 +66,23 @@ body{
     margin: 25px 10px 100px 250px;
   }
 
-  .circle {
+.circle {
     position: absolute;
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: red;
     margin: 30px 20px 1px 10px;
-    }
+}
   
-  .background_ano {
+.circleOpen {
+    background: green;
+}
+
+.circleClose{
+    background: red;
+}
+
+.background_ano {
     position: absolute;
     width: 55px;
     height: 20px;

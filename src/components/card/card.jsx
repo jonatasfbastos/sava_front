@@ -1,76 +1,76 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './card.css';
 import CardItem from '../card-item/card-item';
 
 const cardItems = [
-  {
-      subject: "Informática",
-      classYear: "3º Ano A",
-      status: "Fechado",
-      quarter: "2020.3"
-  },
-  {
-      subject: "Biocombustíveis",
-      classYear: "2º Ano A",
-      status: "Fechado",
-      quarter: "2020.3"
-  },
-  {
-      subject: "Eletromecânica",
-      classYear: "3º Ano B",
-      status: "Fechado",
-      quarter: "2020.3"
-  },
 	{
-		subject: "Eletromecânica",
-		classYear: "1º Ano C",
-		status: "Aberto",
-		quarter: "2021.2"
+		subject: "Informática",
+		classYear: "3º Ano A",
+		isOpened: true,
+		quarter: "2020.3"
 	},
 	{
 		subject: "Biocombustíveis",
-		classYear: "1º Ano C",
-		status: "Fechado",
-		quarter: "2020.2"
-	}, 
-	{
-		subject: "Biocombustíveis",
 		classYear: "2º Ano A",
-		status: "Fechado",
+		isOpened: false,
 		quarter: "2020.3"
 	},
 	{
 		subject: "Eletromecânica",
 		classYear: "3º Ano B",
-		status: "Fechado",
+		isOpened: false,
+		quarter: "2020.3"
+	},
+	{
+		subject: "Eletromecânica",
+		classYear: "1º Ano C",
+		isOpened: true,
+		quarter: "2021.2"
+	},
+	{
+		subject: "Biocombustíveis",
+		classYear: "1º Ano C",
+		isOpened: false,
+		quarter: "2020.2"
+	}, 
+	{
+		subject: "Biocombustíveis",
+		classYear: "2º Ano A",
+		isOpened: false,
+		quarter: "2020.3"
+	},
+	{
+		subject: "Eletromecânica",
+		classYear: "3º Ano B",
+		isOpened: false,
 		quarter: "2020.3"
 	},
 	{
 		subject: "Informática",
 		classYear: "2º Ano A",
-		status: "Aberto",
+		isOpened: true,
 		quarter: "2020.2"
 	},
 ]
 
 const Card = () => {
 
-    return (
-            <div className='cards-container'>
-                {cardItems.map((cardItem,index)=>(
-                  <CardItem
-                    key={index}
-                    subject={cardItem.subject}
-                    classYear={cardItem.classYear}
-                    status={cardItem.status}
-                    quarter={cardItem.quarter}
-                  />      
+	return (
+		<div className='cards-container'>
+			{cardItems.map((cardItem,index)=>(
+				<CardItem
+					key={index}
+					subject={cardItem.subject}
+					classYear={cardItem.classYear}
+					isOpened={cardItem.isOpened}
+					quarter={cardItem.quarter}
+				/>      
 
-                ))}
-            </div>  
-        )
+			))}
+		</div>  
+	)
 
 
-    
+		
 }
 export default Card;

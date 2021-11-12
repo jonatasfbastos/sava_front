@@ -32,14 +32,11 @@ li {
   list-style-type: none;
 }
 
-body {
-  background-color: #eee;
-}
-
 .container {
   margin-left: 300px;
   transition: margin-left .2s ease-in;
   padding: 30px;
+  background: #E5E5E5;
 }
 
 .container.inactive {
