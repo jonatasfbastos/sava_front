@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 import './App.css';
-//import ClassCouncil from './pages/class-council/class-council';
+import ClassCouncil from './pages/class-council/class-council';
 
 import {
   BrowserRouter as Router,
@@ -17,9 +17,6 @@ const Home = () => {
   return <h1>Ínicio</h1>
 }
 
-const ClassCouncil = () => {
-  return <h1>Conselho de Classe</h1>
-}
 
 const QuestionBank = () => {
   return <h1>Banco de perguntas</h1>
