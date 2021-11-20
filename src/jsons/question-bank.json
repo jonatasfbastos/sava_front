@@ -1,0 +1,62 @@
+[
+   {
+        "id":1,
+        "question": "Professor, como você define o nível de comprometimento da turma com as atividades de ensino de um modo geral?",
+        "type":"closed",
+        "options": [
+            {"option": "Muito Baixa"},
+            {"option": "Baixa"},
+            {"option": "Indiferente"},
+            {"option": "Alto"}
+        ]
+    },
+    {
+        "id": 2,
+        "question": "Professor, como você avalia o comportamento da turma nos  ambientes virtuais para aulas síncronas?",
+        "type":"closed",
+        "options": [
+            {"option": "Muito Baixa"},
+            {"option": "Baixa"},
+            {"option": "Indiferente"},
+            {"option": "Alto"}
+        ]
+    },
+    {
+        "id": 3,
+        "question": "Professor, como você avalia o comportamento da turma nos  ambientes virtuais para aulas síncronas?",
+        "type":"closed",
+        "options": [
+            {"option": "Muito Baixa"},
+            {"option": "Baixa"},
+            {"option": "Indiferente"},
+            {"option": "Alto"}
+        ]
+    },
+    {
+        "id": 4,
+        "question": "De um modo geral, como o professor avalia a turma em relação a execução das atividades propostas (lista de exercícios, trabalhos, leituras, provas, dentre outros",
+        "type":"closed",
+        "options": [
+            {"option": "Muito Baixa"},
+            {"option": "Baixa"},
+            {"option": "Indiferente"},
+            {"option": "Alto"}
+        ]
+    },
+    {
+        "id": 5,
+        "question": "Professor, como você define o nível de participação da turma nos horários de atendimento?",
+        "type":"closed",
+        "options": [
+            {"option": "Muito Baixa"},
+            {"option": "Baixa"},
+            {"option": "Indiferente"},
+            {"option": "Alto"}
+        ]
+    },
+    {
+        "id": 6,
+        "question": "Professor, como você define o nível de participação da turma nos horários de atendimento?",
+        "type":"opened"
+    }
+]
