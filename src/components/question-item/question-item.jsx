@@ -23,22 +23,30 @@ const QuestionItem = (props) => {
     //     }
     // }
 
-    return(
+    return (
         
         <div className="container-item">
             <div className="question">
                 <p>
                     {number+1}. {question}
                 </p>
-                <div className="options">
-                    {   
-                        options.map((item, index) => (
-                            <div className="option">
-                                <input type="radio" value={item.option} name={item.option}/>{item.option}
-                            </div>
-                        ))
-                    }
-                </div>
+                { options ? ( 
+                    <div className="options">
+                        {   
+                            options.map((item, index) => (
+                                <div className="option">
+                                    <input type="radio" value={item.option} name={item.option}/>
+                                    {item.option}
+                                </div>
+                            ))
+                        }
+                    </div> 
+                ) : 
+                    <div className="opened-question"> 
+                        <textarea />
+                    </div>
+                }
+               
 
                 {/* {switchTypes(type)} */}
                 {/*s

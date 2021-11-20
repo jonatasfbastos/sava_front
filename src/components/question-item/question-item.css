@@ -20,3 +20,20 @@
 .option {
     margin: 5px;
 }
+
+.option input {
+    margin-right: 5px;
+}
+
+textarea {
+    margin-top: 10px;
+    width:95%;
+    min-height: 30px;
+    resize: none;
+    padding:15px;
+    border-radius:5px;
+    border:0;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+    height:40px;
+    outline-color: var(--light-gray-3);
+  }

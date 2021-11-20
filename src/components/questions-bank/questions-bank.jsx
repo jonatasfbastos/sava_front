@@ -54,10 +54,10 @@ const QuestionItems = [
         ]
     },
     
-    // {
-    //     question: 'Professor, como você define o nível de participação da turma nos horários de atendimento?',
-    //     type:"opened"
-    // },
+    {
+        question: 'Professor, como você define o nível de participação da turma nos horários de atendimento?',
+        type:"opened"
+    },
 ]
 
 function QuestionBank(){
