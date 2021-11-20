@@ -1,0 +1,19 @@
+[ 
+    {   "name":  "Início", 
+        "to": "/", 
+        "exact": true,
+        "iconClassName": "bi bi-house-door"
+    },
+    {
+        "name": "Conselho de Classe",
+        "to": "/conselho_de_classe", 
+        "exact": true,
+        "iconClassName": "bi bi-people"
+    },
+    {
+        "name": "Banco de Perguntas", 
+        "to": "/banco_de_perguntas", 
+        "iconClassName": "bi bi-question-circle"
+    }
+
+]
