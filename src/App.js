@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 
 import './App.css';
 import ClassCouncil from './pages/class-council/class-council';
+import QuestionBank from './pages/question-bank/question-bank';
 
 import {
   BrowserRouter as Router,
@@ -15,11 +16,6 @@ import SideBar from './components/side-bar/side-bar';
 
 const Home = () => {
   return <h1>Ínicio</h1>
-}
-
-
-const QuestionBank = () => {
-  return <h1>Banco de perguntas</h1>
 }
 
 function App() {
