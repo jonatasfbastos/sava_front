@@ -19,10 +19,6 @@ const sideBarItems = [
         to: `/conselho_de_classe`, 
         exact: true,
         iconClassName: "bi bi-people",
-        subMenus: [
-            {name: 'Conselho aberto', to: './conselho_de_classe/abertos'},
-            {name: 'Conselho fechado',  to: './conselho_de_classe/fechados'},
-        ]
     },
     {
         name: 'Banco de Perguntas', 
