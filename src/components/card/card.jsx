@@ -9,17 +9,19 @@ import data from '../../jsons/class-council.json'
 const Card = () => {
 
 	return (
-		<div className='cards-container'>
-			{data.map((cardItem,index)=>(
-				<CardItem
-					key={index}
-					subject={cardItem.subject}
-					classYear={cardItem.classYear}
-					isOpened={cardItem.isOpened}
-					quarter={cardItem.quarter}
-				/>      
+		<div className='cards-container-all'>
+			<div className='cards-container'>
+				{data.map((cardItem,index)=>(
+					<CardItem
+						key={index}
+						subject={cardItem.subject}
+						classYear={cardItem.classYear}
+						isOpened={cardItem.isOpened}
+						quarter={cardItem.quarter}
+					/>      
 
-			))}
+				))}
+			</div>
 		</div>  
 	)
 

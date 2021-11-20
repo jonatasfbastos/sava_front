@@ -46,5 +46,35 @@
 		"classYear": "2º Ano A",
 		"isOpened": true,
 		"quarter": "2020.2"
+	},
+	{
+		"subject": "Eletromecânica",
+		"classYear": "3º Ano B",
+		"isOpened": false,
+		"quarter": "2020.3"
+	},
+	{
+		"subject": "Eletromecânica",
+		"classYear": "1º Ano C",
+		"isOpened": true,
+		"quarter": "2021.2"
+	},
+	{
+		"subject": "Biocombustíveis",
+		"classYear": "1º Ano C",
+		"isOpened": false,
+		"quarter": "2020.2"
+	}, 
+	{
+		"subject": "Biocombustíveis",
+		"classYear": "2º Ano A",
+		"isOpened": false,
+		"quarter": "2020.3"
+	},
+	{
+		"subject": "Eletromecânica",
+		"classYear": "3º Ano B",
+		"isOpened": false,
+		"quarter": "2020.3"
 	}
 ]

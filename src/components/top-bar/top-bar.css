@@ -9,15 +9,18 @@
 
 .top-bar-container i, .top-bar-container p {
     margin: 15px 0px 0px 15px;
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 .top-bar-container i {
     color: var(--dark-blue-2);
+    font-size: 22px;
+    margin-top: 12px;
 }
 
 .top-bar-container p {
-    color: var(--dark-gray-3);
+    color: var(--dark-gray-2);
 }
 
 .path{
@@ -27,14 +30,15 @@
 .top-bar-container .top-bar-button{
     margin-left: auto;
     margin-top: 8px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .top-bar-container .top-bar-button button{
     background: var(--white);
     border: 1px solid var(--light-gray-2);
     padding: 6px;
-    color: var(--dark-gray-3)
+    color: var(--dark-gray-3);
+    border-radius: 3px;
 }
 
 .top-bar-container .avatar {
