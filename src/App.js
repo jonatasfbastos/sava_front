@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 import './App.css';
 import ClassCouncil from './pages/class-council/class-council';
-import QuestionBank from './pages/question-bank/question-bank';
+import QuestionBank from './pages/question-bank-page/question-bank-page';
 
 import {
   BrowserRouter as Router,
