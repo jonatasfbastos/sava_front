@@ -8,25 +8,7 @@ import user from '../../assets/coordenador.jpg'
 
 import SideBarItem from '../side-bar-item/side-bar-item';
 
-const sideBarItems = [ 
-    {   name:  'Início', 
-        to: '/', 
-        exact: true,
-        iconClassName: "bi bi-house-door", 
-    },
-    {
-        name: 'Conselho de Classe',
-        to: `/conselho_de_classe`, 
-        exact: true,
-        iconClassName: "bi bi-people",
-    },
-    {
-        name: 'Banco de Perguntas', 
-        to: `/banco_de_perguntas`, 
-        iconClassName: "bi bi-question-circle"
-    }
-
-]
+import data from '../../jsons/side-bar.json'
 
 const SideBar = (props) => {
     const [inactive, setInactive] = useState(false)
@@ -53,7 +35,7 @@ const SideBar = (props) => {
         <div className="main-menu">
             <ul>
                 {
-                    sideBarItems.map((sideBarItem, index) => (
+                    data.map((sideBarItem, index) => (
                         <SideBarItem 
                             key={index} 
                             name={sideBarItem.name}

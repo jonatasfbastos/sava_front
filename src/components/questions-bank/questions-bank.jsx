@@ -1,6 +1,6 @@
 import QuestionItem from '../question-item/question-item';
 import './questions-bank.css';
-import data from "../../Jsons/question-bank.json"
+import data from "../../jsons/question-bank.json"
 
 const QuestionBank = () => {
 
