@@ -25,7 +25,6 @@ function App() {
     <div className="App">
       <Router>
         <SideBar onCollapse={(inactive) => {
-          console.log(inactive)
           setInactive(inactive)
         }} />
 

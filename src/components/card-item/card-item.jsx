@@ -21,7 +21,6 @@ const CardItem = (props) =>{
                         <h2 className="status">{`${isOpened ? "Aberto" : "Fechado"}`}</h2>
                     </div>
                     <div className="isOpened">
-                        {console.log(`circle circle${isOpened ? "Open" : "Close"}`)}
                         <div className={`circle circle${isOpened ? "Open" : "Close"}`}></div>
                         <div className="background_ano"></div>
                         <h2 className="ano">{quarter}</h2>
