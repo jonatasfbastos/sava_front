@@ -43,23 +43,9 @@ const QuestionItem = (props) => {
                     </div> 
                 ) : 
                     <div className="opened-question"> 
-                        <textarea />
+                        <textarea placeholder="Comente sua resposta ..." />
                     </div>
                 }
-               
-
-                {/* {switchTypes(type)} */}
-                {/*s
-                <div className="options">
-                    {   
-                       
-                        options.map((item, index) => (
-                            <div className="option">
-                                <input type="radio" value={`${item.option}`}    name={`${item.option}`}/>{item.option}
-                            </div>
-                        ))
-                    }
-                </div> */}
             </div>
         </div>
             
