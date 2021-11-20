@@ -18,12 +18,12 @@ const CardItem = (props) =>{
                 <div className="footer">
                     <hr className="line"/>
                     <div className="status">
-                        <h2 className="status">{`${isOpened ? "Aberto" : "Fechado"}`}</h2>
+                        <h3 className="status">{`${isOpened ? "Aberto" : "Fechado"}`}</h3>
                     </div>
                     <div className="isOpened">
                         <div className={`circle circle${isOpened ? "Open" : "Close"}`}></div>
                         <div className="background_ano"></div>
-                        <h2 className="ano">{quarter}</h2>
+                        <h3 className="ano">{quarter}</h3>
                     </div>  
                 </div>
             </div>    
