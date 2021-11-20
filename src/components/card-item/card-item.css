@@ -1,8 +1,8 @@
 .card-body{
     background-color: #ffffff;
     border-radius: 5px;
-    width: 310px;
-    height: 360px;
+    width: 250px;
+    height: 300px;
     margin-bottom: 10px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -20,16 +20,22 @@
 }
   
   .top h2{
-    font-size: 22px;
     font-weight: 380;
     padding: 15px;
     padding-bottom: 0px;
     color: rgb(255, 255, 255);
   }
+
+  h2{
+    font-size: 15px;
+  }
+
+  h3{
+    font-size: 13px;
+  }
   
   .top h3{
     
-    font-size: 15px;
     font-weight: 380;
     color: white;
     padding: 15px;
@@ -39,31 +45,31 @@
   hr.line{
     color: #D0D0D0;
     position:absolute;
-    width: 310px;
-  
+    width: 99%;
+    border: 0.3px solid var(--light-gray-3); 
   }
+
+ 
   
   .footer{
     height: 75px;
     position: relative;
-    margin-top: 185px;
+    margin-top: 135px;
   }
   
-  .footer h2.status{
+  .footer h3.status{
     margin-top: 25px;
     margin-left: 32px;
     position: absolute;
     color: #7587B0;
-    font-size: 15px;
     font-weight: 500;      
   }
 
-  .footer h2.ano{
+  .footer h3.ano{
     font-weight: 500;
     color: #7587B0;
     position: absolute;
-    font-size: 15px;
-    margin: 25px 10px 100px 250px;
+    margin: 25px 10px 100px 195px;
   }
 
 .circle {
@@ -71,7 +77,7 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    margin: 30px 20px 1px 10px;
+    margin: 27px 20px 1px 10px;
 }
   
 .circleOpen {
@@ -86,8 +92,8 @@
     position: absolute;
     width: 55px;
     height: 20px;
-    left: 246px;
-    top: 27px;
+    left: 188px;
+    top: 25px;
     background: var(--light-gray-3);
     border-radius: 5px;
     }
@@ -96,7 +102,7 @@
   font-size: 20px;
   color: var(--white);
   position: absolute;
-  margin: 10px 200px 1px 285px; 
+  margin: 10px 200px 1px 220px; 
     
 }    
 
