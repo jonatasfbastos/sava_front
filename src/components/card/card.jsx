@@ -19,7 +19,6 @@ const Card = () => {
 						isOpened={cardItem.isOpened}
 						quarter={cardItem.quarter}
 					/>      
-
 				))}
 			</div>
 		</div>  

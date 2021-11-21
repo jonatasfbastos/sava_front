@@ -3,14 +3,13 @@
     border-radius: 5px;
     width: 250px;
     height: 300px;
-    margin-bottom: 10px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .top{
     width: 100%;
-    height: 105px;
+    height: 100px;
     background-color: var(--light-blue-2);
     border-radius: 5px;
 }
@@ -19,65 +18,63 @@
     background-color: var(--light-blue-1);
 }
   
-  .top h2{
+  .top h2 {
     font-weight: 380;
     padding: 15px;
     padding-bottom: 0px;
     color: rgb(255, 255, 255);
+	
+	font-weight: 400;
   }
 
-  h2{
+  h2 {
     font-size: 15px;
   }
 
-  h3{
+  h3 {
     font-size: 13px;
   }
   
-  .top h3{
-    
+  .top h3 {
     font-weight: 380;
     color: white;
     padding: 15px;
     padding-top: 0px;
   }
   
-  hr.line{
+  hr.line {
     color: #D0D0D0;
     position:absolute;
     width: 99%;
     border: 0.3px solid var(--light-gray-3); 
-  }
-
- 
+  } 
   
-  .footer{
-    height: 75px;
+  .footer {
     position: relative;
-    margin-top: 135px;
+    margin-top: 145px;
   }
   
-  .footer h3.status{
-    margin-top: 25px;
+  .footer h3.status {
+    margin-top: 18px;
     margin-left: 32px;
     position: absolute;
     color: #7587B0;
     font-weight: 500;      
   }
 
-  .footer h3.ano{
+  .footer h3.ano {
     font-weight: 500;
     color: #7587B0;
     position: absolute;
-    margin: 25px 10px 100px 195px;
+    margin: 18px 10px 100px 195px;
   }
 
 .circle {
     position: absolute;
-    width: 15px;
-    height: 15px;
+    width: 13px;
+    height: 13px;
     border-radius: 50%;
-    margin: 27px 20px 1px 10px;
+    margin: 22px 20px 1px 10px;
 }
   
 .circleOpen {
@@ -91,18 +88,18 @@
 .background_ano {
     position: absolute;
     width: 55px;
-    height: 20px;
+    height: 22px;
     left: 188px;
-    top: 25px;
+    top: 17px;
     background: var(--light-gray-3);
     border-radius: 5px;
-    }
+}
 
 .icon {
-  font-size: 20px;
+  font-size: 17px;
   color: var(--white);
   position: absolute;
-  margin: 10px 200px 1px 220px; 
+  margin: 12px 215px 1px 225px; 
     
 }    
 

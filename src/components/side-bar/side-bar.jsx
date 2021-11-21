@@ -45,31 +45,10 @@ const SideBar = (props) => {
                             subMenus={sideBarItem.subMenus || []}
                             sideBarActive={inactive}
                             
-                        />
-                        
+                        />                        
                     ))
                    
                 }
-                {/* <li>
-                    <a className="menu-item">
-                        <div className="menu-icon">
-                            <i class="bi bi-house-door"></i>
-                        </div>
-                        <span>Início</span>
-                    </a>
-                </li>
-                <SideBarItem 
-                    name={"Content"}
-                    
-                />
-                <li>
-                    <a className="menu-item">
-                        <div className="menu-icon">
-                            <i class="bi bi-question-circle"></i>
-                        </div>
-                        <span>Banco de perguntas</span>
-                    </a>
-                </li> */}
             </ul>
         </div>
         <div className="side-bar-footer">
