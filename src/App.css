@@ -10,6 +10,7 @@
   --dark-gray-3: #656566;
   --light-gray-1: #A4AAB6;
   --light-gray-2: #BCC2CB;
+  --light-gray: #D0D0D0;
   --light-gray-3: #EBEEF4;
   --light-gray-4: #f2f4f7;
   --light-green-1: #178E51;
@@ -35,7 +36,7 @@ li {
 .container {
   margin-left: 300px;
   transition: margin-left .2s ease-in;
-  background: #E5E5E5;
+  background: var(--light-gray-3);
 }
 
 .container.inactive {
