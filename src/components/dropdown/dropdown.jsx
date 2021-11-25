@@ -1,20 +1,21 @@
-import "./dropdown.css"
 import {useState} from "react";
+import "./dropdown.css"
+import data from "../../jsons/dropdown/class-council-modal.json"
 
-function Dropdown({selected, setSelected}) {
+function Dropdown(props) {
     const [isActive, setIsActive] = useState(false);
-    const options = ['1', '2', '3']
+    const {type, selected, setSelected} = props;
     return (
         <div className="dropdown">
             <div className="dropdown-btn" onClick={e => setIsActive(!isActive)}>{selected}</div>
             {isActive &&(
             <div className="dropdown-content">
-                {options.map(option => (
+                {data.options.map(options => (
                     <div onClick={e => {
-                        setSelected(option)
+                        setSelected(options.option)
                         setIsActive(false)
                         }
-                    } className="dropdown-itens"> {option} </div>
+                    } className="dropdown-itens"> {options.option} </div>
                 ))}
             </div>
             )}
