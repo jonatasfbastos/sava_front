@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import QuestionItem from '../question-item/question-item';
 import './modal-class-council.css';
 import data from "../../jsons/question-bank.json"
+import Dropdown from '../dropdown/dropdown';
 
 
 const ModalClassCouncil = ({CloseModal}) => {
@@ -16,6 +17,7 @@ const ModalClassCouncil = ({CloseModal}) => {
                     <i onClick={() => {CloseModal(false)}} class="bi bi-x"></i>
                 </div>
             </div>
+            <Dropdown/>
             <span id="questionnaire">Questionário:</span>
             <div className="modal-container-body">
                 <div className="questions-container">

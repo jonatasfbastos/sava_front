@@ -1,6 +1,7 @@
 import QuestionItem from '../question-item/question-item';
 import './questions-bank.css';
 import data from "../../jsons/question-bank.json"
+import Dropdown from '../../components/dropdown/dropdown';
 
 const QuestionBank = () => {
 
@@ -8,6 +9,7 @@ const QuestionBank = () => {
         <div>
             <div className="drop-down-container">
                 <div className="drop-down">
+                    <Dropdown/>
                 </div>
             </div>
             <div className="content">
