@@ -26,6 +26,7 @@
 .modal-container .modal-top {
     width: 100%;
     display: flex;
+    margin-top: 10px;
     justify-content: space-between;
     border-bottom: 1px solid var(--light-gray-2);
 

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import QuestionItem from '../question-item/question-item';
 import './modal-class-council.css';
 import data from "../../jsons/question-bank.json"
@@ -6,6 +6,7 @@ import Dropdown from '../dropdown/dropdown';
 
 
 const ModalClassCouncil = ({CloseModal}) => {
+    const [selected, setSelected] = useState("");
     return (
     <div className="modal-background">
         <div className="modal-container">
@@ -17,7 +18,7 @@ const ModalClassCouncil = ({CloseModal}) => {
                     <i onClick={() => {CloseModal(false)}} class="bi bi-x"></i>
                 </div>
             </div>
-            <Dropdown/>
+            <Dropdown selected={selected} setSelected={setSelected}/>
             <span id="questionnaire">Questionário:</span>
             <div className="modal-container-body">
                 <div className="questions-container">

@@ -1,17 +1,21 @@
 import "./dropdown.css"
 import {useState} from "react";
 
-function Dropdown() {
+function Dropdown({selected, setSelected}) {
     const [isActive, setIsActive] = useState(false);
-    const [selected, setSelected] = useState("");
+    const options = ['1', '2', '3']
     return (
-        <div className="DropDown">
-            <div className="DropDownBtn" onClick={e => setIsActive(!isActive)}>Escolha um</div>
+        <div className="dropdown">
+            <div className="dropdown-btn" onClick={e => setIsActive(!isActive)}>{selected}</div>
             {isActive &&(
-            <div className="DropDownContent">
-                <div className="DropDownItens"> 1 </div>
-                <div className="DropDownItens"> 2 </div>
-                <div className="DropDownItens"> 3 </div>
+            <div className="dropdown-content">
+                {options.map(option => (
+                    <div onClick={e => {
+                        setSelected(option)
+                        setIsActive(false)
+                        }
+                    } className="dropdown-itens"> {option} </div>
+                ))}
             </div>
             )}
         </div>
