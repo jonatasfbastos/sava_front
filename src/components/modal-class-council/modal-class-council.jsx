@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
+import QuestionItem from '../question-item/question-item';
 import './modal-class-council.css';
+import data from "../../jsons/question-bank.json"
 
 
 const ModalClassCouncil = ({CloseModal}) => {
@@ -11,34 +13,31 @@ const ModalClassCouncil = ({CloseModal}) => {
                     <span>Novo Conselho</span>
                 </div>
                 <div className="close-buttom">
-                    <i onClick={() => {CloseModal(false)}} class="bi bi-x-circle"></i>
+                    <i onClick={() => {CloseModal(false)}} class="bi bi-x"></i>
                 </div>
             </div>
-            
+            <span id="questionnaire">Questionário:</span>
             <div className="modal-container-body">
-                <p>GOGO</p>
+                <div className="questions-container">
+                    {data.map((item, index) => (
+                        <QuestionItem
+                            number={index}
+                            question={item.question}
+                        />
+
+                    ))}
+                </div>
+                <div className="body-button">       
+                    <button>Banco de Perguntas</button>
+                </div>
             </div>
             <div className="modal-container-bottom">
-                <button onClick={() => {CloseModal(false)}}> Cancelar </button>
-                <button> Continuar </button>
+                <button id="cancel" onClick={() => {CloseModal(false)}}> Cancelar </button>
+                <button id="register" > Cadastrar </button>
             </div>
         </div>
     </div>
     )
 }
-
-// const ModalClassCouncil = (props) => {
-    
-//     return (
-//         <div className="modal-container">
-//             <p>skhvkjclkxcjvhbvjskasdjfh</p>
-//             <div className="modal-footer">
-//             <button onClick={props.onClose} className="button">
-//               Close
-//             </button>
-//           </div>
-//         </div>
-//     )
-// }
 
 export default ModalClassCouncil;

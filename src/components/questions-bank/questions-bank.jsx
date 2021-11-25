@@ -12,11 +12,14 @@ const QuestionBank = () => {
             </div>
             <div className="content">
                 {data.map((item, index) => (
-                    <QuestionItem
-                        number={index}
-                        question={item.question}
-                        options={item.options}
-                    />
+                    <div className="container-item">
+                        <QuestionItem
+                            number={index}
+                            question={item.question}
+                            options={item.options}
+                            toAnswer={true}
+                        />
+                    </div>
 
                 ))}
             </div>
