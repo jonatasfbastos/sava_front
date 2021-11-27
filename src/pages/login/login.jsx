@@ -2,7 +2,7 @@ import './login.css'
 import logo from '../../assets/logo-white.png'
 
 
-export default function Login(){
+const Login = () => {
     return(
         <>
             <div className="container_login">
@@ -11,7 +11,7 @@ export default function Login(){
                         <img src = {logo}/>
                     </div>
                 </div>
-            </div>y
+            </div>
             <div className="center">
                 <div className="center_data">
                     <span><i class="fa bi-lock"></i>Login</span>
@@ -31,3 +31,5 @@ export default function Login(){
         </>
     )
 }
+
+export default Login

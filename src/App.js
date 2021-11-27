@@ -4,6 +4,7 @@ import './App.css';
 import ClassCouncil from './pages/class-council/class-council';
 import QuestionBank from './pages/question-bank-page/question-bank-page';
 import RecoverPassword from './pages/recover-password/recover-password';
+import Login from './pages/login/login';
 
 import {
   BrowserRouter as Router,
@@ -35,6 +36,7 @@ function App() {
             <Route path={'/conselho_de_classe'} element={<ClassCouncil/>} />
             <Route path={'/banco_de_perguntas'} element={<QuestionBank/>} />
             <Route path={'/recuperar_senha'} element={<RecoverPassword/>} />
+            <Route path={'/login'} element={<Login/>} />
           </Routes>
         </div>
       </Router>
