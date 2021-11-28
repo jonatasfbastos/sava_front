@@ -1,0 +1,39 @@
+.dropdown{
+    position: relative;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.dropdown .dropdown-btn{
+    width: 40%;
+    height: 25px;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 2px;
+    border: solid #E5E5E5 1px;
+    padding-top: 5px;
+    text-align: center;
+    color: #656566;
+    cursor: pointer;
+}
+
+.dropdown .dropdown-content{
+    position: absolute;
+    top: 100%;
+    width: 37%;
+    height: 70px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 2px;
+    color: #656566;
+}
+
+.dropdown .dropdown-content .dropdown-itens{
+    cursor: pointer;
+    margin-bottom: 2px;
+    text-align: center;
+    transition: all 0.5;
+}
+
+.dropdown .dropdown-content .dropdown-itens:hover{
+    background: #f4f4f4;
+}

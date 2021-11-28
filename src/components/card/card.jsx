@@ -1,30 +1,22 @@
-import React from 'react';
+import react from "react";
 
 import './card.css';
 
 import CardItem from '../card-item/card-item';
-
 import data from '../../jsons/class-council.json'
 
-const Card = () => {
+const Card = () => (
+    <div className='cards-container'>
+        {data.map((cardItem,index)=>(
+            <CardItem
+                key={index}
+                subject={cardItem.subject}
+                classYear={cardItem.classYear}
+                isOpened={cardItem.isOpened}
+                quarter={cardItem.quarter}
+            />      
+        ))}
+    </div>
+)
 
-	return (
-		<div className='cards-container-all'>
-			<div className='cards-container'>
-				{data.map((cardItem,index)=>(
-					<CardItem
-						key={index}
-						subject={cardItem.subject}
-						classYear={cardItem.classYear}
-						isOpened={cardItem.isOpened}
-						quarter={cardItem.quarter}
-					/>      
-				))}
-			</div>
-		</div>  
-	)
-
-
-		
-}
-export default Card;
+export default Card

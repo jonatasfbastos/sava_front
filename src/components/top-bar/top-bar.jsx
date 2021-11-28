@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './top-bar.css';
 import user from '../../assets/coordenador.jpg'
+import ModalClassCouncil from '../modal-class-council/modal-class-council';
 
 const TopBar = (props) => {
 
     const {path, icon, typeButton} = props;
+    const [OpenModal, setOpenModal] = useState(false);
 
    return (
     <div className="top-bar-container">
@@ -15,7 +17,10 @@ const TopBar = (props) => {
         <div className="top-bar-button">
             {
                 typeButton ?
-                    <button>Adicionar {typeButton == "class-council" ? " Conselho " : typeButton == "question-bank" ? "banco de perguntas" : ""}</button>
+                <>
+                    <button onClick={() => {setOpenModal(true)}}>Adicionar {typeButton == "class-council" ? " Conselho " : typeButton == "question-bank" ? "banco de perguntas" : ""}</button>
+                    {OpenModal && <ModalClassCouncil CloseModal={setOpenModal}/>}
+                </>
                 : null
             }
         </div>

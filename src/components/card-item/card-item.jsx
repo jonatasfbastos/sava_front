@@ -1,32 +1,35 @@
-import React from "react";
+import react from "react";
 import './card-item.css';
 
-
-
-const CardItem = (props) =>{
+const CardItem = (props) => {
     const {subject, classYear, isOpened, quarter} = props;
+
     return(
         <div className="card-item-container">
-            <div className="card-body ">
-                <div className={`top ${isOpened ? "open" : "close"}`}>
-                    <div className="icon">
+            <div className={`card-top ${isOpened ? "" : "closed"}`}>
+                <div className="card-top-content">
+                    <div className="card-top-header">
+                        <span>{subject}</span>
                         <i class="bi bi-three-dots-vertical"></i>
                     </div>
-                    <h2>{subject}</h2>
-                    <h3>{classYear}</h3>
-                </div>
-                <div className="footer">
-                    <hr className="line"/>
-                    <div className="status">
-                        <h3 className="status">{`${isOpened ? "Aberto" : "Fechado"}`}</h3>
-                    </div>
-                    <div className="isOpened">
-                        <div className={`circle circle${isOpened ? "Open" : "Close"}`}></div>
-                        <div className="background_ano"></div>
-                        <h3 className="ano">{quarter}</h3>
-                    </div>  
+                    <span>{classYear}</span>
                 </div>
             </div>    
+            <div className="card-body">
+
+            </div>
+            <div className="card-bottom">
+                <div className="card-bottom-content">
+                    <div className={`status is-${isOpened ? "opened" : "closed"}`} >
+                        <i class="bi bi-circle-fill"></i>
+                        <span>{`${isOpened ? "Aberto" : "Fechado"}`}</span>
+                    </div>
+                    <div className="card-quarter">
+                        <span>{quarter}</span>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
         
     );

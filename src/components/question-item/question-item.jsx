@@ -2,7 +2,7 @@ import './question-item.css';
 
 const QuestionItem = (props) => {
 
-    const {question , options, number, type} = props;
+    const {question , options, number, type, toAnswer} = props;
 
     // const switchTypes = (type) => {
     //     switch(type) {
@@ -25,30 +25,27 @@ const QuestionItem = (props) => {
 
     return (
         
-        <div className="container-item">
-            <div className="question">
-                <p>
-                    {number+1}. {question}
-                </p>
-                { options ? ( 
-                    <div className="options">
-                        {   
-                            options.map((item, index) => (
-                                <div className="option">
-                                    <input type="radio" value={item.option} name={item.option}/>
-                                    {item.option}
-                                </div>
-                            ))
-                        }
-                    </div> 
-                ) : 
-                    <div className="opened-question"> 
-                        <textarea placeholder="Comente sua resposta ..." />
-                    </div>
-                }
-            </div>
-        </div>
-            
+        <div className="question">
+            <p>
+                {number+1}. {question}
+            </p>
+            { options && toAnswer? ( 
+                <div className="options">
+                    {   
+                        options.map((item, index) => (
+                            <div className="option">
+                                <input type="radio" value={item.option} name={item.option}/>
+                                {item.option}
+                            </div>
+                        ))
+                    }
+                </div> 
+            ) : toAnswer ? 
+                <div className="opened-question"> 
+                    <textarea placeholder="Comente sua resposta ..." />
+                </div>
+            : null }
+        </div>            
     )
 }
 
