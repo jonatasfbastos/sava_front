@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
+
+import { useSideBar } from '../../context/side-bar-context';
 
 import './side-bar.css'
 
@@ -10,13 +12,13 @@ import SideBarItem from '../side-bar-item/side-bar-item';
 
 import data from '../../jsons/side-bar.json'
 
-const SideBar = (props) => {
-    const [inactive, setInactive] = useState(false)
+const SideBar = () => {
+    const { inactive, setInactive } = useSideBar();
 
-    useEffect(() => {
-        props.onCollapse(inactive);
-    }, [inactive]);
-    
+    // useEffect(() => {
+    //     props.onCollapse(inactive);
+    // }, [inactive]);
+
     return <div className={`side-bar-container ${inactive? " inactive" : ""}`}> 
         <div className="top-section">
             <div className="logo">
@@ -47,7 +49,6 @@ const SideBar = (props) => {
                             
                         />                        
                     ))
-                   
                 }
             </ul>
         </div>
