@@ -1,11 +1,11 @@
 import react from "react";
 
-import './card.css';
+import './class-council-card.css';
 
-import CardItem from '../card-item/card-item';
+import CardItem from '../class-council-card-item/class-council-card-item';
 import data from '../../jsons/class-council.json'
 
-const Card = () => (
+const ClassCouncilCard = () => (
     <div className='cards-container'>
         {data.map((cardItem,index)=>(
             <CardItem
@@ -19,4 +19,4 @@ const Card = () => (
     </div>
 )
 
-export default Card
+export default ClassCouncilCard

@@ -7,11 +7,11 @@ const QuestionBank = () => {
 
     return (
         <div>
-            <div className="drop-down-container">
+            {/* <div className="drop-down-container">
                 <div className="drop-down">
                     <Dropdown/>
                 </div>
-            </div>
+            </div> */}
             <div className="content">
                 {data.map((item, index) => (
                     <div className="container-item">

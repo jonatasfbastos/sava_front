@@ -7,7 +7,7 @@ export function SideBarProvider({ children }) {
 
     return (
         <SideBarContext.Provider 
-            value={{inactive, setInactive}}
+            value={{inactive, setInactive}} 
         >
             {children}
         </SideBarContext.Provider>

@@ -1,7 +1,7 @@
 import react from "react";
-import './card-item.css';
+import './class-council-card-item.css';
 
-const CardItem = (props) => {
+const ClassCouncilCardItem = (props) => {
     const {subject, classYear, isOpened, quarter} = props;
 
     return(
@@ -35,4 +35,4 @@ const CardItem = (props) => {
     );
 }
 
-export default CardItem;
+export default ClassCouncilCardItem;

@@ -1,11 +1,7 @@
 import React, {useState} from "react";
-
-import ClassCouncil from '../pages/class-council/class-council'
-import QuestionBank from '../pages/question-bank-page/question-bank-page';
-import RecoverPassword from '../pages/recover-password/recover-password';
 import Login from '../pages/login/login';
 
-import { useSideBar } from '../context/side-bar-context';
+import { SideBarProvider, useSideBar } from '../context/side-bar-context';
 
 import {
   BrowserRouter as Router,
@@ -14,29 +10,25 @@ import {
   Link,
 } from "react-router-dom";
 
-import SideBar from '../components/side-bar/side-bar';
-
 import './routes.css'
+import PageWraper from "../pages/page-wrapper/page-wraper";
 
 const Home = () => {
     return <h1>Ínicio</h1>
   }
 
 const SideBarRoutes = () => {
-    const { inactive, setInactive } = useSideBar();
 
     return (
         <Router>
-            <SideBar />
-            <div className={`container${inactive ? " inactive" : ""} `}>
+            <SideBarProvider >
                 <Routes>
-                    <Route exact path={'/'} element={<Home />} />
-                    <Route path={'/conselho_de_classe'} element={<ClassCouncil/>} />
-                    <Route path={'/banco_de_perguntas'} element={<QuestionBank/>} />
-                    <Route path={'/recuperar_senha'} element={<RecoverPassword/>} />
+                    <Route exact path={'/'} element={<PageWraper to="" />} />
+                    <Route path={'/conselho_de_classe'} element={<PageWraper to="conselho_de_classe"/>} />
+                    <Route path={'/banco_de_perguntas'} element={<PageWraper to="banco_de_perguntas"/>} />
                     <Route path={'/login'} element={<Login/>} />
                 </Routes>
-            </div>
+            </SideBarProvider>
         </Router>
     )
 }
