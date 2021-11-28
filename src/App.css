@@ -24,22 +24,3 @@
   padding: 0;
   font-family: 'Poppins', sans-serif;
 }
-
-ul {
-  margin: 0;
-  padding: 0; 
-}
-
-li {
-  list-style-type: none;
-}
-
-.container {
-  margin-left: 300px;
-  transition: margin-left .2s ease-in;
-  background: var(--light-gray-3);
-}
-
-.container.inactive {
-  margin-left: 80px;
-}
