@@ -1,0 +1,21 @@
+.footer {
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color: white;
+    text-align: center;
+
+  }
+
+.body {
+    margin-top: 30px;
+    height: 10;
+}  
+
+.body span {
+    color: var(--light-gray-0);
+    font-size: 14px;
+   
+}

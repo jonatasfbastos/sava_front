@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '../../components/card/card';
 import TopBar from '../../components/top-bar/top-bar';
+import Footer from '../../components/footer/footer';
 
 const ClassCouncil = () => {
     return <div className="container-class-council">
@@ -8,6 +9,7 @@ const ClassCouncil = () => {
         <div className="cards-container-class-council">
             <Card/>
         </div>
+        <Footer/>
     </div>
 }
 
