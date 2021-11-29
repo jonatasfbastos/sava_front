@@ -59,8 +59,8 @@
     border: 1px solid var(--light-gray-2);
     border-radius: 5px;
     margin-top: 10px;
-    margin-bottom: 15px;
-    min-height: 300px;
+    margin-bottom: 30px;
+    min-height: 330px;
     padding: 5px 10px;
 
     display: flex;
@@ -79,9 +79,7 @@
 }
 
 .modal-container-bottom {
-    margin-top: 10px;
     width: 100%;
-
     display: flex;
     justify-content: space-between;
     align-items: end;

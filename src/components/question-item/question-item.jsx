@@ -4,27 +4,7 @@ const QuestionItem = (props) => {
 
     const {question , options, number, type, toAnswer} = props;
 
-    // const switchTypes = (type) => {
-    //     switch(type) {
-    //         case 'closed': (
-    //             <div className="options">
-    //                 {   
-    //                     options.map((item, index) => (
-    //                         <div className="option">
-    //                             <input type="radio" value={item.option} name={item.option}/>{item.option}
-    //                         </div>
-    //                     ))
-    //                 }
-    //             </div>
-    //         )
-    //         break;
-    //         default:
-    //             <p>oi</p>
-    //     }
-    // }
-
     return (
-        
         <div className="question">
             <p>
                 {number}. {question}
