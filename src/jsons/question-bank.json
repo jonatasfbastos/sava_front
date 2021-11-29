@@ -1,6 +1,7 @@
 [
    {
         "id":1,
+        "to":"teacher",
         "question": "Professor, como você define o nível de comprometimento da turma com as atividades de ensino de um modo geral?",
         "type":"closed",
         "options": [
@@ -12,6 +13,7 @@
     },
     {
         "id": 2,
+        "to":"teacher",
         "question": "Professor, como você avalia o comportamento da turma nos  ambientes virtuais para aulas síncronas?",
         "type":"closed",
         "options": [
@@ -23,6 +25,7 @@
     },
     {
         "id": 3,
+        "to":"teacher",
         "question": "Professor, como você avalia o comportamento da turma nos  ambientes virtuais para aulas síncronas?",
         "type":"closed",
         "options": [
@@ -34,6 +37,7 @@
     },
     {
         "id": 4,
+        "to":"teacher",
         "question": "De um modo geral, como o professor avalia a turma em relação a execução das atividades propostas (lista de exercícios, trabalhos, leituras, provas, dentre outros",
         "type":"closed",
         "options": [
@@ -45,6 +49,7 @@
     },
     {
         "id": 5,
+        "to":"teacher",
         "question": "Professor, como você define o nível de participação da turma nos horários de atendimento?",
         "type":"closed",
         "options": [
@@ -56,7 +61,62 @@
     },
     {
         "id": 6,
+        "to":"teacher",
         "question": "Professor, como você define o nível de participação da turma nos horários de atendimento?",
         "type":"opened"
+    },    
+    {
+        "id": 7,
+        "to":"teacher",
+        "question": "Professor, como você avalia o comportamento da turma nos  ambientes virtuais para aulas síncronas?",
+        "type":"closed",
+        "options": [
+            {"option": "Muito Baixa"},
+            {"option": "Baixa"},
+            {"option": "Indiferente"},
+            {"option": "Alto"}
+        ]
+    },
+    {
+        "id": 8,
+        "to":"teacher",
+        "question": "Professor, como você avalia o comportamento da turma nos  ambientes virtuais para aulas síncronas?",
+        "type":"closed",
+        "options": [
+            {"option": "Muito Baixa"},
+            {"option": "Baixa"},
+            {"option": "Indiferente"},
+            {"option": "Alto"}
+        ]
+    },
+    {
+        "id": 1,
+        "to": "student",
+        "question": "Observações da turma em questões Administrativas (Setores administrativos em geral: Direções, Coordenações de cursos, Cores, Coordenação de TI, Multidisciplinar: psicológico, social, médico, nutricional, pedagógico, assistência de alunos, Napne), Biblioteca, Coordenações de laboratório e demais)",
+        "type": "opened"
+    },
+    {
+        "id": 2,
+        "to": "student",
+        "question": "Observações da turma em questões acadêmicas gerais:",
+        "type": "opened"
+    },
+    {
+        "id": 3,
+        "to": "student",
+        "question": "Observações da turma a serem encaminhadas a um professor ou servidor cujo nome deve ser citado aqui: (esta parte será encaminhada pelo pedagógico e não será citada no Conselho, assim como toda observação que diga respeito a um único servidor).",
+        "type": "opened"
+    },
+    {
+        "id": 4,
+        "to": "student",
+        "question": "Observações da turma em questões Administrativas (Setores administrativos em geral: Direções, Coordenações de cursos, Cores, Coordenação de TI, Multidisciplinar: psicológico, social, médico, nutricional, pedagógico, assistência de alunos, Napne), Biblioteca, Coordenações de laboratório e demais)",
+        "type": "opened"
+    },
+    {
+        "id": 5,
+        "to": "student",
+        "question": "Observações da turma em questões acadêmicas gerais:",
+        "type": "opened"
     }
 ]

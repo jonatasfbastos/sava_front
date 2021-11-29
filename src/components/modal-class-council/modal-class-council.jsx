@@ -8,6 +8,12 @@ import Dropdown from '../dropdown/dropdown';
 
 const ModalClassCouncil = ({CloseModal}) => {
     const [selected, setSelected] = useState("");
+
+    const dataTeacher = data.filter((item) => item.to ==="teacher" )
+    console.log(dataTeacher)
+    const dataStudent = data.filter((item) => item.to ==="student" )
+    console.log(dataStudent)
+
     return (
     <div className="modal-background">
         <div className="modal-container">
@@ -19,25 +25,41 @@ const ModalClassCouncil = ({CloseModal}) => {
                     <i onClick={() => {CloseModal(false)}} class="bi bi-x"></i>
                 </div>
             </div>
-            <Dropdown selected={selected} setSelected={setSelected} type="class"/>
-            <span id="questionnaire">Questionário:</span>
-            <div className="modal-container-body">
-                <div className="questions-container">
-                    {data.map((item, index) => (
+            <div className="dropdown-container">
+                <Dropdown selected={selected} setSelected={setSelected} type="class"/>
+            </div>            
+            <span id="questionnaire">Questionário • Professor:</span>
+            <div className="modal-container-body" >
+                <div className="questions-container" style={{overflowY: 'scroll', height: '300px'}}>
+                    {dataTeacher.map((item, index) => (
                         <QuestionItem
-                            number={index}
+                            number={item.id}
                             question={item.question}
                         />
 
                     ))}
                 </div>
-                <div className="body-button">       
-                    <button>Banco de Perguntas</button>
+            </div>
+            <span id="questionnaire">Questionário • Aluno:</span>
+            <div className="modal-container-body">
+                <div className="questions-container" style={{overflowY: 'scroll', height: '300px'}}>
+                    {dataStudent.map((item, index) => (
+                        <QuestionItem
+                            number={item.id}
+                            question={item.question}
+                        />
+
+                    ))}
                 </div>
             </div>
             <div className="modal-container-bottom">
-                <button id="cancel" onClick={() => {CloseModal(false)}}> Cancelar </button>
-                <button id="register" > Cadastrar </button>
+                <div className="body-button">       
+                    <button>Banco de Perguntas</button>
+                </div>
+                <div className="bot-button">
+                    <button id="cancel" onClick={() => {CloseModal(false)}}> Cancelar </button>
+                    <button id="register" > Cadastrar </button>
+                </div>
             </div>
         </div>
     </div>

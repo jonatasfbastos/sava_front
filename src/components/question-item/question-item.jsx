@@ -27,7 +27,7 @@ const QuestionItem = (props) => {
         
         <div className="question">
             <p>
-                {number+1}. {question}
+                {number}. {question}
             </p>
             { options && toAnswer? ( 
                 <div className="options">
