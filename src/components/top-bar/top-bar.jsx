@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import './top-bar.css';
 import user from '../../assets/coordenador.jpg'
 import ModalClassCouncil from '../modal-class-council/modal-class-council';
+import { ClassCouncilModalProvider, useClassCouncilModal } from '../../context/class-council-modal-context';
 
 import dataSource from '../../jsons/side-bar.json'
 
 const TopBar = (props) => {
+    const { isActive, setIsActive, selectedItem, setSelectedItem, openModal, setOpenModal } = useClassCouncilModal();
 
-    const {path} = props;
+    const {path} = props;   
     
     const data = dataSource.filter((item) => item.to === `/${path}`)
-    console.log(data)
-    const [OpenModal, setOpenModal] = useState(false);
 
     return (
         <div className="top-bar-container">
@@ -22,7 +22,10 @@ const TopBar = (props) => {
             <div className="top-bar-button">
                 <>
                     <button onClick={() => {setOpenModal(true)}}>Adicionar {path === "conselho_de_classe" ? " Conselho " : path === "banco_de_perguntas" ? "pergunta" : ""}</button>
-                    {OpenModal && <ModalClassCouncil CloseModal={setOpenModal}/>}
+                    {
+                        openModal && 
+                        <ModalClassCouncil /> 
+                    }
                 </>
 
             </div>

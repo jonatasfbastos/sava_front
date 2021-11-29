@@ -4,7 +4,7 @@ import TopBar from '../../components/top-bar/top-bar';
 import Footer from '../../components/footer/footer';
 import SideBar from '../../components/side-bar/side-bar';
 import Home from  '../home/home';
-
+import {ClassCouncilModalProvider, useClassCouncilModal} from '../../context/class-council-modal-context'
 
 import './page-wraper.css'
 import { useSideBar } from '../../context/side-bar-context';
@@ -25,13 +25,19 @@ function renderSwitch(param) {
 
 const PageWraper = ({ to }) => {
     const { inactive, setInactive } = useSideBar();
+    const { isActive, setIsActive, selectedItem, setSelectedItem, openModal, setOpenModal } = useClassCouncilModal();
+
+    console.log(openModal)
+
 
     return <> 
         <SideBar />
-        <div className={`container${inactive ? " inactive" : ""} `}>
-            <TopBar path={to}/>
-            { renderSwitch(to) }
-            <Footer/>
+        <div className={`container${inactive ? " inactive" : ""}`}>
+            <div className={`${openModal ?  "isOpened" : "not"}`}> 
+                <TopBar path={to}/>   
+                    { renderSwitch(to) }
+                <Footer/>
+            </div> 
         </div>
     </>
 }
