@@ -26,31 +26,33 @@ const ModalClassCouncil = () => {
             </div>
             <div className="dropdown-container">
                 <Dropdown type="class"/>
-            </div>            
-            <span id="questionnaire">Questionário • Professor:</span>
-            <div className="modal-container-body" >
-                <div className="questions-container" style={{overflowY: 'scroll', height: '300px'}}>
-                    {dataTeacher.map((item, index) => (
-                        <QuestionItem
-                            number={item.id}
-                            question={item.question}
-                        />
+            </div>   
+            <div className="questionnaire-conteiner">        
+                <span id="questionnaire">Questionário • Professor:</span>
+                <div className="modal-container-body" >
+                    <div className="questions-container" style={{overflowY: 'scroll', height: '300px'}}>
+                        {dataTeacher.map((item, index) => (
+                            <QuestionItem
+                                number={item.id}
+                                question={item.question}
+                            />
 
-                    ))}
+                        ))}
+                    </div>
                 </div>
-            </div>
-            <span id="questionnaire">Questionário • Aluno:</span>
-            <div className="modal-container-body">
-                <div className="questions-container" style={{overflowY: 'scroll', height: '300px'}}>
-                    {dataStudent.map((item, index) => (
-                        <QuestionItem
-                            number={item.id}
-                            question={item.question}
-                        />
+                <span id="questionnaire">Questionário • Aluno:</span>
+                <div className="modal-container-body">
+                    <div className="questions-container" style={{overflowY: 'scroll', height: '300px'}}>
+                        {dataStudent.map((item, index) => (
+                            <QuestionItem
+                                number={item.id}
+                                question={item.question}
+                            />
 
-                    ))}
+                        ))}
+                    </div>
                 </div>
-            </div>
+            </div> 
             <div className="modal-container-bottom">
                 <div className="body-button">       
                     <button>Banco de Perguntas</button>
