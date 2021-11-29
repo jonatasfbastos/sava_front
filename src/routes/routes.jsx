@@ -14,10 +14,6 @@ import './routes.css'
 import PageWraper from "../pages/page-wrapper/page-wraper";
 import { ClassCouncilModalProvider } from "../context/class-council-modal-context";
 
-const Home = () => {
-    return <h1>Ínicio</h1>
-  }
-
 const SideBarRoutes = () => {
 
     return (

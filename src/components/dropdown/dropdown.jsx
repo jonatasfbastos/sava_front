@@ -14,7 +14,7 @@ function Dropdown() {
                 {data.options.map(options => (
                     <div onClick={e => {
                         setSelectedItem(options.option)
-                        setIsActive(false)
+                        setIsActive(false) 
                         }
                     } className="dropdown-itens"> {options.option} </div>
                 ))}
