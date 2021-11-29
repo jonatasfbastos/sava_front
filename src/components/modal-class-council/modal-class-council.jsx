@@ -30,7 +30,7 @@ const ModalClassCouncil = () => {
             <div className="questionnaire-conteiner">        
                 <span id="questionnaire">Questionário • Professor:</span>
                 <div className="modal-container-body" >
-                    <div className="questions-container" style={{overflowY: 'scroll', height: '300px'}}>
+                    <div className="questions-container" style={{overflowY: 'scroll', height: '100%'}}>
                         {dataTeacher.map((item, index) => (
                             <QuestionItem
                                 number={item.id}
@@ -42,7 +42,7 @@ const ModalClassCouncil = () => {
                 </div>
                 <span id="questionnaire">Questionário • Aluno:</span>
                 <div className="modal-container-body">
-                    <div className="questions-container" style={{overflowY: 'scroll', height: '300px'}}>
+                    <div className="questions-container" style={{overflowY: 'scroll', height: '100%'}}>
                         {dataStudent.map((item, index) => (
                             <QuestionItem
                                 number={item.id}
