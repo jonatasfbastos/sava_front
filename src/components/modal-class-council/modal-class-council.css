@@ -26,14 +26,14 @@
 .modal-container .modal-top {
     width: 100%;
     display: flex;
-    margin-top: 10px;
+    margin-top: 2%;
     justify-content: space-between;
     border-bottom: 1px solid var(--light-gray-2);
 
 }
 
 .dropdown-container {
-    margin-bottom: 20px;
+    margin-bottom: 3%;
 }
 
 .modal-container .modal-top span {
@@ -48,6 +48,12 @@
     color: var(--dark-gray-3); 
 }
 
+.questionnaire-conteiner {
+    height: 80%;
+    margin-top: 1%;
+    min-height: 50%;
+}
+
 .modal-container span#questionnaire {
     font-size: 15px ;
     margin: 0;
@@ -58,10 +64,10 @@
 .modal-container-body {
     border: 1px solid var(--light-gray-2);
     border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    min-height: 330px;
-    padding: 5px 10px;
+    margin-bottom: 3%;
+    height: 41%;
+    min-height: 30%;
+    padding: 2px 7px;
 
     display: flex;
     flex-direction: column;
@@ -80,9 +86,11 @@
 
 .modal-container-bottom {
     width: 100%;
+    height: 5%;
     display: flex;
     justify-content: space-between;
     align-items: end;
+    margin-bottom: 2%;
 }
 
 .bot-button {
