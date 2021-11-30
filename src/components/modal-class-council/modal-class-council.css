@@ -51,7 +51,7 @@
 .questionnaire-conteiner {
     height: 80%;
     margin-top: 1%;
-    min-height: 75%;
+    min-height: 60%;
 }
 
 .modal-container span#questionnaire {
@@ -65,8 +65,8 @@
     border: 1px solid var(--light-gray-2);
     border-radius: 5px;
     margin-bottom: 3%;
-    height: 45%;
-    min-height: 40%;
+    height: 43%;
+    min-height: 35%;
     padding: 2px 7px;
 
     display: flex;
