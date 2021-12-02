@@ -1,10 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: rgba(234,243,253,1);
+    font-family: 'Poppins', sans-serif;
 }
 
 .container_login {
@@ -112,7 +114,7 @@ body {
 }
 
 .ic_user i{
-    font-size: 23px;
+    font-size: 22px;
     color: #656566;
     position: absolute;
     left: 0;
@@ -125,7 +127,7 @@ body {
 }
 
 .ic_password i{
-    font-size: 23px;
+    font-size: 22px;
     color: #656566;
     position: absolute;
     left: 0;
@@ -136,3 +138,5 @@ body {
 .center_data input:focus + i{
     color: rgba(50,93,238,1)
 }
+
+    

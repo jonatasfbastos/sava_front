@@ -1,6 +1,6 @@
 import './login.css'
 import logo from '../../assets/logo-white.png'
-
+import Footer from '../../components/footer/footer';
 
 const Login = () => {
     return(
@@ -28,6 +28,9 @@ const Login = () => {
                     <a href="#">Esqueceu ou deseja alterar senha?</a>
                 </div>
             </div>
+            <footer>
+                <Footer/>
+            </footer>
         </>
     )
 }
