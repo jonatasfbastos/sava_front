@@ -7,12 +7,28 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
+  Switch,
+  Navigate,
   Link,
 } from "react-router-dom";
 
 import './routes.css'
 import PageWraper from "../pages/page-wrapper/page-wraper";
 import { ClassCouncilModalProvider } from "../context/class-council-modal-context";
+import { isAuthenticated } from "../services/auth";
+
+const PrivateRoute = ({ component: Component, ...rest }) => (
+  <Route
+    {...rest}
+    render={props =>
+      isAuthenticated() ? (
+        <Component {...props} />
+      ) : (
+        <Navigate to={{ pathname: "/", state: { from: props.location } }} />
+      )
+    }
+  />
+);
 
 const SideBarRoutes = () => {
 
