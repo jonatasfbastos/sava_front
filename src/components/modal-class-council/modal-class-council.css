@@ -20,16 +20,13 @@
     display: flex;
     flex-direction: column;
     margin-left: auto;
-    padding: 25px;
 }
 
 .modal-container .modal-top {
     width: 100%;
     display: flex;
-    margin-top: 2%;
     justify-content: space-between;
     border-bottom: 1px solid var(--light-gray-2);
-
 }
 
 .dropdown-container {
@@ -48,8 +45,36 @@
     color: var(--dark-gray-3); 
 }
 
+.modal-container-superior {
+    height: 93%;
+    padding: 10px;
+}
+
+.modal-container-bottom {
+    width: inherit;
+
+    bottom: 0;
+    height: 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    position: fixed;
+
+    -webkit-box-shadow: -2px -10px 6px -10px rgba(0,0,0,0.20); 
+    box-shadow: -2px -10px 6px -10px rgba(0,0,0,0.20);
+}
+
+.container-buttons-bottom {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: auto;
+}
+
 .questionnaire-conteiner {
-    height: 80%;
+    height: 87%;
     margin-top: 1%;
     min-height: 50%;
 }
@@ -57,25 +82,20 @@
 .modal-container span#questionnaire {
     font-size: 15px ;
     margin: 0;
-    margin-top: 10px;
+    margin-top: 10x;
     color: var(--dark-gray-3);
 }
 
 .modal-container-body {
     border: 1px solid var(--light-gray-2);
     border-radius: 5px;
-    margin-bottom: 3%;
-    height: 41%;
-    min-height: 30%;
-    padding: 2px 7px;
 
+    margin: 10px;
+    height: 40%;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.modal-container-body button {
-    bottom: 0;
 }
 
 .questions-container p {
@@ -84,19 +104,11 @@
     font-weight: 400;
 }
 
-.modal-container-bottom {
-    width: 100%;
-    height: 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    margin-bottom: 2%;
-}
-
 .bot-button {
     display: flex;
     gap: 10px;
-}
+    margin-right: 5px;
+} 
 
 #cancel {
     border: 1px solid var(--dark-blue-3);

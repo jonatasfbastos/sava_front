@@ -5,10 +5,10 @@
 }
 
 .dropdown .dropdown-btn{
-    width: 40%;
+    width: 30%;
     height: 25px;
     border-radius: 2px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 2px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 2px; */
     border: solid #E5E5E5 1px;
     padding-top: 5px;
     text-align: center;
@@ -19,7 +19,7 @@
 .dropdown .dropdown-content{
     position: absolute;
     top: 100%;
-    width: 37%;
+    width: 30%;
     height: 70px;
     padding: 10px;
     background: #fff;
