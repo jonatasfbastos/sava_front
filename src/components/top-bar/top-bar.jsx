@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './top-bar.css';
 import user from '../../assets/coordenador.jpg'
 import ModalClassCouncil from '../modal-class-council/modal-class-council';
+import ModalQuestionsBank from '../modal-questions-bank/modal-questions-bank'
 import { ClassCouncilModalProvider, useClassCouncilModal } from '../../context/class-council-modal-context';
-
 import dataSource from '../../jsons/side-bar.json'
 
 const TopBar = (props) => {
@@ -12,7 +12,7 @@ const TopBar = (props) => {
     const {path} = props;   
     
     const data = dataSource.filter((item) => item.to === `/${path}`)
-
+    
     return (
         <div className="top-bar-container">
             <div className="path">
@@ -23,8 +23,8 @@ const TopBar = (props) => {
                 <>
                     <button onClick={() => {setOpenModal(true)}}>Adicionar {path === "conselho_de_classe" ? " Conselho " : path === "banco_de_perguntas" ? "pergunta" : ""}</button>
                     {
-                        openModal && 
-                        <ModalClassCouncil /> 
+                        openModal &&
+                        (path === "conselho_de_classe" ? <ModalClassCouncil/> : path === "banco_de_perguntas" ? <ModalQuestionsBank/> : "")  
                     }
                 </>
 
