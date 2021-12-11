@@ -16,7 +16,7 @@ const QuestionBank = () => {
                 {data.map((item, index) => (
                     <div className="container-item">
                         <QuestionItem
-                            number={index}
+                            number={index+1}
                             question={item.question}
                             options={item.options}
                             toAnswer={true}
