@@ -10,9 +10,7 @@ import user from '../../assets/coordenador.jpg'
 
 import SideBarItem from '../side-bar-item/side-bar-item';
 
-import data from '../../jsons/side-bar.json'
-
-const SideBar = () => {
+const SideBar = ({data}) => {
     const { inactive, setInactive } = useSideBar();
 
     // useEffect(() => {

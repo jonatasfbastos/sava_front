@@ -1,0 +1,18 @@
+[ 
+    {   "name":  "Cadastrar", 
+        "to": "/", 
+        "exact": true,
+        "iconClassName": "bi bi-house-door"
+    },
+    {
+        "name": "Aluno",
+        "to": "/conselho_de_classe", 
+        "exact": true,
+        "iconClassName": "bi bi-people"
+    },
+    {
+        "name": "Professor", 
+        "to": "/banco_de_perguntas", 
+        "iconClassName": "bi bi-question-circle"
+    }
+]

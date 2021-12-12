@@ -1,0 +1,110 @@
+.modal-user-container {
+    display: flex;
+    flex-direction: column;
+} 
+
+.modal-user-container .modal-header {
+    display: flex;
+    gap: 10px;
+
+    align-items: center;
+}
+
+.modal-user-container .modal-header .user-avatar img {
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+}
+
+.modal-user-container .modal-header .user-description {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: -5px;
+} 
+
+.modal-user-container .modal-header span.modal-header-title  {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.modal-user-container .modal-header span.modal-header-email  {
+    font-size: 12px;
+    color: var(--light-gray-0);
+
+    top: -5px;
+    font-weight: 420;
+
+}
+
+.modal-user-container .modal .modal-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    
+}
+
+.register-options {
+    display: flex;
+    flex-direction: column;
+
+    border-left: 1px solid var(--light-gray-3);
+    margin-left: 7px;
+
+}
+
+.modal-user-container .modal .modal-content .register-options span {
+    color: var(--dark-gray-2);
+
+    row-gap: 10px;
+    padding: 3px;
+
+    border-radius: 2px;
+
+    cursor: pointer;
+
+    margin-left: 7px;
+
+    font-size: 13.8px;
+    font-weight: 400;
+
+}
+
+.modal-user-container .modal .modal-content .register-options span:hover {
+    background: var(--light-gray-3);
+    cursor: pointer;
+}
+
+.modal-user-container .modal .modal-content span#registers {
+    margin-left: 0;
+    border: 0;
+    font-size: 12px;
+    margin-bottom: -5px;
+    font-weight: 500;
+    color: var(--dark-gray-3);
+}
+
+.signout {
+    margin-top: 10px;
+    display: flex;
+    font-size: 14px;
+    gap: 5px;
+
+    color: var(--dark-gray-2);
+    font-weight: 450;
+
+    cursor: pointer;
+
+    align-items: center;
+
+    margin-left: 5px;
+}
+
+
+.signout:hover {
+    text-decoration: underline var(--dark-gray-3); 
+}
+
+.signout i {
+    font-size: 16px;
+}
