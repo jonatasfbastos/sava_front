@@ -7,9 +7,10 @@ import logo from '../../assets/logo-white.png'
 
 const config = {
   headers: {
-    'Content-Type': 'application/x-www-form-urlencoded'
+    'Content-Type': 'application/x-www-form-urlencoded',
   }
 }
+
 
 const params = new URLSearchParams()
 
@@ -36,11 +37,9 @@ class Login extends Component {
 
       try {
         const response = await api.post("/login", params,config)
-        .then((response) => 
-          console.log(response.data)
-        )
-       //login(response.data.token);
-  //     this.props.history.push("/login");
+            login(response.data.token)
+            this.props.history.push("/")
+
       } catch (err) {
         this.setState({
          error:

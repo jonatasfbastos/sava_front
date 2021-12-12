@@ -21,6 +21,9 @@ const TopBar = (props) => {
             </div>
             <div className="top-bar-button">
                 <>
+                <button onClick={()=> {localStorage.clear(); window.location.href = '/login';}}>
+                    sair
+                </button>
                     <button onClick={() => {setOpenModal(true)}}>Adicionar {path === "conselho_de_classe" ? " Conselho " : path === "banco_de_perguntas" ? "pergunta" : ""}</button>
                     {
                         openModal && 

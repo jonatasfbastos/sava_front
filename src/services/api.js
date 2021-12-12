@@ -9,6 +9,9 @@ api.interceptors.request.use(async config => {
   const token = getToken();
   if (token) {
     config.headers.Authorization = `Bearer ${token}`;
+    //apagar dps
+    console.log(config.headers.Authorization);
+  }else{
   }
   return config;
 });
