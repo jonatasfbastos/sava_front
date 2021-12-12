@@ -4,6 +4,7 @@ import './modal-class-council.css';
 import data from "../../jsons/question-bank.json"
 import Dropdown from '../dropdown/dropdown';
 import { useClassCouncilModal } from '../../context/class-council-modal-context';
+import dataClassCouncilModal from "../../jsons/dropdown/class-council-modal.json"
 
 
 
@@ -27,7 +28,7 @@ const ModalClassCouncil = () => {
                 </div>
 
                 <div className="dropdown-container">
-                    <Dropdown type="class"/>
+                    <Dropdown type="class" data={dataClassCouncilModal}/>
                 </div>   
 
                 <div className="questionnaire-conteiner">        

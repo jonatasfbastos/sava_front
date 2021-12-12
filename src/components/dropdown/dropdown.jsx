@@ -1,9 +1,8 @@
 import {useState} from "react";
 import "./dropdown.css"
-import data from "../../jsons/dropdown/class-council-modal.json"
 import { useClassCouncilModal } from "../../context/class-council-modal-context";
 
-function Dropdown() {
+function Dropdown({data}) {
     const { isActive, setIsActive, selectedItem, setSelectedItem, openModal, setOpenModal } = useClassCouncilModal();
 
     return (
