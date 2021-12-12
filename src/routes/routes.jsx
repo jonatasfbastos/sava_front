@@ -1,35 +1,53 @@
-import React, {useState} from "react";
+
 import Login from '../pages/login/login';
-
-import { SideBarProvider } from '../context/side-bar-context';
-
+import Item from '../components/question-item/question-item';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
+  Switch,
+  Navigate,
   Link,
+  Redirect
 } from "react-router-dom";
 
-import './routes.css'
 import PageWraper from "../pages/page-wrapper/page-wraper";
+import { Route } from 'react-router-dom';
+import { SideBarProvider } from '../context/side-bar-context';
 import { ClassCouncilModalProvider } from "../context/class-council-modal-context";
+import { isAuthenticated } from "../services/auth";
 
-const SideBarRoutes = () => {
 
-    return (
-        <Router>
-            <SideBarProvider >
-                <ClassCouncilModalProvider> 
-                    <Routes>
-                        <Route exact path={'/'} element={<PageWraper to="" />} />
-                        <Route path={'/conselho_de_classe'} element={<PageWraper to="conselho_de_classe"/>} />
-                        <Route path={'/banco_de_perguntas'} element={<PageWraper to="banco_de_perguntas"/>} />
-                        <Route path={'/login'} element={<Login/>} />
-                    </Routes>
-                </ClassCouncilModalProvider>
-            </SideBarProvider>
-        </Router>
-    )
-}
+const PrivateRoute = ({ component: Component, ...rest }) => (
+    <Route {...rest} render={props =>
+        isAuthenticated() ? (
+          <Component {...props} />
+        ) : (
+          <Redirect to={{ path: "/login", state: { from: props.location } }} />
+        )
+      }
+    />
+ );
+
+
+
+ const SideBarRoutes  = () => (
+  <Router>
+    <SideBarProvider >
+      <ClassCouncilModalProvider>
+        <Switch>
+   
+            <Route path="/login" component={Login} />          
+            <Route path="/signup" component={() => <h1>SignUp</h1>} />
+			<PrivateRoute path='/conselho_de_classe' component={() => (<PageWraper to="conselho_de_classe"/>)} />
+            <PrivateRoute path='/banco_de_perguntas' component={() => (<PageWraper to="banco_de_perguntas"/>)} />
+			<PrivateRoute path="/" component={() => (<PageWraper to="" />)} />
+
+		</Switch>
+        </ClassCouncilModalProvider>
+      </SideBarProvider>
+  </Router>   
+ )
+
 
 export default SideBarRoutes;
